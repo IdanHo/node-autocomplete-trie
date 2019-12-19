@@ -169,7 +169,7 @@ class AutoComplete {
         suggestions.push(temp.join(''));
       }
 
-      node.children.forEach(child => setTimeout(recurse(child), 0));
+      node.children.forEach(child => setTimeout(recurse, 0, child));
 
       // Pop last letter off tracker when we're about to move up a level
       tracker.pop();
